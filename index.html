@@ -1,44 +1,65 @@
 <!DOCTYPE html>
-<html lang="es">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
-    <title>pandita</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
-
 <body>
-    <h1>hola xd</h1>
-    <p>texto algo largo</p>
-    <a href="https://github.com/Rolymon/inf-122/tree/main">link de githubbd</a>
-    
-    <img src="https://previews.123rf.com/images/shushanto/shushanto2209/shushanto220900703/191842443-imagen-de-fondo-de-la-ilustraci%C3%B3n-del-arte-conceptual-de-la-destrucci%C3%B3n-de-los-planetas.jpg" alt="imagen random">
-    <ul>
-        <li>mat</li>
-        <li>fis</li>
+    <div class="bod">
+    <h1>bienvenido a mini proyecto</h1>
+    <h3>prueba html css y java scripo</h3>
+
+
+    <h2>to do list</h2>
+    <ul id="tarealista">
+        <li>aprende github</li>
+        <li>aprende vscode</li>
+
+
     </ul>
-    <ol>
-        <li>papa</li>
-        <li>cebolla</li>
-        <li>pollo</li>
-    </ol>
-    <form>
-        <label for="text" class="etiqueta">Nombre: </label>
-        <input type="text" name="text" id="name">
-        <div>
-            <label for="text" >Apellido:</label>
-            <input type="text" id="apellido">
-        </div>
-        <div>
-            <input type="submit" value="Enviar" class="enviar">
-        </div>
-    </form>
-    <h1> Hola soy otro titulo  largo</h1>
-    <p>Este es un parrafo largote </p>
+    
+        <label for="text"></label>
+        <input type="text" id="nuevatarea" placeholder="agregar nueva tareaaaa">
+        <button onclick="agregartarea()" >agrege tarea</button>
+
+
+    
+</div>
 
 </body>
-<footer>
 
-</footer>
+<style>
+    .bod{
+        background-color: azure;
+        font-size: 20px;
+        width:25cm;
+        font-weight: bolder;
+        
+    }
+    body{
+        
+        text-align: left;
+        
+    }
+    button{
+        background-color: rgb(75, 194, 75);
+        margin: 20px;
+    }
+
+
+</style>
+
+<script>
+    function agregartarea(){
+            var nuevatarea = document.getElementById("nuevatarea").value;
+            var nuevalista=document.createElement("li");
+            nuevalista.textContent=nuevatarea;
+            document.getElementById("tarealista").appendChild(nuevalista);
+            document.getElementById("nuevatarea").value="";
+        }
+
+</script>
 
 </html>
