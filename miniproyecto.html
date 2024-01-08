@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="bod">
+    <h1>bienvenido a mini proyecto</h1>
+    <h3>prueba html css y java scripo</h3>
+
+
+    <h2>to do list</h2>
+    <ul id="tarealista">
+        <li>aprende github</li>
+        <li>aprende vscode</li>
+
+
+    </ul>
+    
+        <label for="text"></label>
+        <input type="text" id="nuevatarea" placeholder="agregar nueva tareaaaa">
+        <button onclick="agregartarea()" >agrege tarea</button>
+
+
+    
+</div>
+
+</body>
+
+<style>
+    .bod{
+        background-color: azure;
+        font-size: 20px;
+        width:25cm;
+        font-weight: bolder;
+        
+    }
+    body{
+        
+        text-align: left;
+        
+    }
+    button{
+        background-color: rgb(75, 194, 75);
+        margin: 20px;
+    }
+
+
+</style>
+
+<script>
+    function agregartarea(){
+            var nuevatarea = document.getElementById("nuevatarea").value;
+            var nuevalista=document.createElement("li");
+            nuevalista.textContent=nuevatarea;
+            document.getElementById("tarealista").appendChild(nuevalista);
+            document.getElementById("nuevatarea").value="";
+        }
+
+</script>
+
+</html>
