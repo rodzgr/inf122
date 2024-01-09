@@ -2,64 +2,92 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="minipryecto.css">
 </head>
 <body>
-    <div class="bod">
-    <h1>bienvenido a mini proyecto</h1>
-    <h3>prueba html css y java scripo</h3>
+    <div class="main">
+        <div class="brochure"> 
+             <h1 class="title">seccion awaranse in the work1</h1>
+             <p class="subtitle" >product desing ilustracionrwerwrwerewr </p>
+             <p class="subtitle" >7pewqeqeqweqwrqrwerewrewrwer  </p>
+             <button class="primary-button" value="">
+                
+                 <span>dowload brochure</span>
+            </button>
+        </div>    
+    </div>
+
+    <div class="more-info">
+        <section class="icons-container">
+            <div class="card-container">
+                <div class="card-icon" >
+                    <figure>
+                        <img src="" alt="" class="logo">
+                    </figure>
+                </div>
+                <div class="icon-text">
+                    <h2>rese arch materials </h2>
+                    <p class="icon-title"> guide  your decisions with our weahlt of research</p>
+                </div>
+            </div>
+
+            <div class="card-container">
+                <div class="card-icon" >
+                    <figure>
+                        <img src="" alt="">
+                    </figure>
+                </div>
+                <div class="icon-text">
+                    <h2>rese arch materials </h2>
+                    <p class="icon-title"> guide  your decisions with our weahlt of research</p>
+                </div>
+            </div>
+
+            <div class="card-container">
+                <div class="card-icon" >
+                    <figure>
+                        <img src="" alt="">
+                    </figure>
+                </div>
+                <div class="icon-text">
+                    <h2>rese arch materials </h2>
+                    <p class="icon-title"> guide  your decisions with our weahlt of research</p>
+                </div>
+            </div>
+
+            <div class="card-container">
+                <div class="card-icon" >
+                    <figure>
+                        <img src="" alt="">
+                    </figure>
+                </div>
+                <div class="icon-text">
+                    <h2>rese arch materials </h2>
+                    <p class="icon-title"> guide  your decisions with our weahlt of research</p>
+                </div>
+            </div>
 
 
-    <h2>to do list</h2>
-    <ul id="tarealista">
-        <li>aprende github</li>
-        <li>aprende vscode</li>
+        </section>
 
 
-    </ul>
-    
-        <label for="text"></label>
-        <input type="text" id="nuevatarea" placeholder="agregar nueva tareaaaa">
-        <button onclick="agregartarea()" >agrege tarea</button>
 
 
-    
-</div>
+
+
+
+    </div>
+
 
 </body>
 
+
+
 <style>
-    .bod{
-        background-color: azure;
-        font-size: 20px;
-        width:25cm;
-        font-weight: bolder;
-        
-    }
-    body{
-        
-        text-align: left;
-        
-    }
-    button{
-        background-color: rgb(75, 194, 75);
-        margin: 20px;
-    }
+    
 
 
 </style>
-
-<script>
-    function agregartarea(){
-            var nuevatarea = document.getElementById("nuevatarea").value;
-            var nuevalista=document.createElement("li");
-            nuevalista.textContent=nuevatarea;
-            document.getElementById("tarealista").appendChild(nuevalista);
-            document.getElementById("nuevatarea").value="";
-        }
-
-</script>
-
 </html>
