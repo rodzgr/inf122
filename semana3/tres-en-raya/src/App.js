@@ -1,17 +1,15 @@
 import React from 'react';
 import './App.css';
 
-import TableroC from './componentes/TableroC';
+
+import Juego from './componentes/Juego';
 
 function App() {
-
-
-
   return (
     <div className="App">
 
       
-      <TableroC />
+      <Juego/>
     </div>
   );
 }
