@@ -4,21 +4,26 @@ import Navbar from './componentes/Navbar';
 import Login from './componentes/Login';
 import Perfil from "./componentes/Perfil"
 import Registro from "./componentes/Registro"
-import {BrowserRouter ,route,Switch } from 'react-router-app';
+import Navbar from './componentes/Navbar';
+import {BrowserRouter as Router,Routes ,Route} from 'react-router-dom';
 function App() {
   return (
     <div className="App">
-      <router>
+      <Router>
         <div>
-          <Navbar/>
-          <Switch>
-            <Route path="/" exact component={Login}/> 
+         
+          <Router>
+            <div>
+              <Routes>
+            <Route path="/" exact component={Navbar}/> 
             <Route path="/login" exact component={Login}/> 
             <Route path="/registro" exact component={Registro}/> 
             <Route path="/perfil" exact component={Perfil}/> 
-          </Switch>
+            </Routes>
+            </div>
+          </Router>
         </div>
-      </router>
+      </Router>
 
     </div>
   );

@@ -1,21 +1,31 @@
 import React from "react";
- function Perfil(){
+import Botones from "./Boton";
+function Perfil(){
+    const funClick=(a)=>{
+        console.log(a);
+    }
     return(
-        <div className="padre">
-
-            <label className="etiqueta">nombre </label>
-            <input placeholder="pepito"></input>
-            
-            <label className="etiqueta">apellido</label>
-            <input placeholder="perez"></input>
-            
-            <label className="etiqueta">contraseña</label>
-            <input placeholder="12345cs"></input>
-        </div>
-
-
+        <div className="main">
+            <div className="padre">
+                <form>
+                    <div className="Nombre">
+                        <label>Nombre: </label>
+                        <input placeholder="Ingresar Nombre"></input>
+                        </div>
+                        <div className="Apellido">
+                            <label>Apellido: </label>
+                            <input placeholder="Ingresar Apellido"></input>
+                        </div>
+                        <div className="contraseña">
+                            <label>contraseña: </label>
+                            <input placeholder="Ingresar usuario"></input>
+                        </div>
+                        <div className="Buttons">
+                            <Botones funClick={()=>funClick("Registrar")} text={"Registrarse"}/>
+                            </div>
+                </form>
+            </div>
+            </div>
     );
-
- }
-
+}
 export default Perfil;

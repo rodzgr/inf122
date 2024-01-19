@@ -1,11 +1,13 @@
-import React from "react";
-function Boton(){
+import React from 'react';
+
+
+
+function Boton({funClick, text}) {
     return (
-            <div className="boton"> 
-                    <button>ingresar</button>
-
-            </div>
-
-    );
+        <button  onClick={funClick}>
+            {text}
+        </button>
+    )
 }
+
 export default Boton;
