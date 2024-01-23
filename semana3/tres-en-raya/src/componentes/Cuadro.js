@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/Cuadro.css';
+import '../style/Cuadro.css';
 
 function Cuadro({ valor }) {
     return (

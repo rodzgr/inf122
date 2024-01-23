@@ -14,7 +14,7 @@ function Historial({ historial, saltarA }) {
 
     return (
         <div className="informacion-juego">
-            <ol>{movimientos}</ol>
+            <ol>{movimientos}</ol>                      
         </div>
     );
 }

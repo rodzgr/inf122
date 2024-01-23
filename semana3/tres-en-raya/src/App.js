@@ -1,15 +1,14 @@
 import React from 'react';
 import './App.css';
 
+import JuegoA from './componentes/JuegoA';
 
-import Juego from './componentes/Juego';
 
 function App() {
+
   return (
     <div className="App">
-
-      
-      <Juego/>
+      <JuegoA/>
     </div>
   );
 }

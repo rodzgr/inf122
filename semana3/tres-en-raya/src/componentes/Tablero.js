@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/Tablero.css';
+import '../style/Tablero.css';
 import Cuadro from './Cuadro';
 function Tablero() {
 
@@ -18,5 +18,3 @@ function Tablero() {
 
     );
 }
-
-export default Tablero;

@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/Tablero.css';
+import '../style/Tablero.css';
 import CuadroB from './CuadroB';
 import { useState } from 'react';
 
@@ -42,8 +42,7 @@ function TableroD() {
             setJugador(jugador === "X" ? "O" : "X");
         }
         if (calcularGanador(cuadrosTemp) !== null) {
-            //alert("Ganador: " + calcularGanador(cuadrosTemp));
-            <h1>el ganador es {calcularGanador(cuadrosTemp)}</h1>
+            alert("Ganador: " + calcularGanador(cuadrosTemp));
             setCuadros(Array(9).fill(null));
         }
     }

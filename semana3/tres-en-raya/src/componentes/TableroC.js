@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/Tablero.css';
+import '../style/Tablero.css';
 import CuadroB from './CuadroB';
 import { useState } from 'react';
 
@@ -8,12 +8,9 @@ function TableroC() {
     const [cuadros, setCuadros] = useState(Array(9).fill(null));
     const [jugador, setJugador] = useState("O");
     const click = (i) => {
-        console.log(i);
-        console.log(jugador);
         const cuadrosTemp = [...cuadros];
         cuadrosTemp[i] = jugador;
         setCuadros(cuadrosTemp);
-        //console.log()
         if (jugador === "X") {
             setJugador("O");
         } else {

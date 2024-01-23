@@ -1,0 +1,13 @@
+.juego-tablero {
+    display: flex;
+    flex-direction: column;
+}
+
+.juego {
+    display: flex;
+}
+.limpiar{
+    .limpiar-btn {
+        margin-top: 10px; /* Espacio superior para separar del historial */
+      }
+}

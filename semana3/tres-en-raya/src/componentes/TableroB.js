@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/tablero';
+import '../style/Tablero.css';
 import CuadroB from './CuadroB';
 
 function TableroB() {
